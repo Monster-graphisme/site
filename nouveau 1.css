@@ -1,0 +1,340 @@
+/* ------------------------------------------- */
+/* THEMES (Clair/Sombre) */
+/* ------------------------------------------- */
+:root {
+    /* Couleurs Sombre (Dark Mode) */
+    --bg-color: #1a1a2e;
+    --text-color: #e4e4e4;
+    --primary-color: #ff6b6b; /* Accent rouge */
+    --secondary-color: #4a4e69; /* Gris foncé pour header/footer */
+    --card-bg: #2b2e4a; /* Fond des cartes/sections */
+    --border-color: #4a4e69;
+}
+
+[data-theme="light"] {
+    /* Couleurs Clair (Light Mode) */
+    --bg-color: #f4f7f6;
+    --text-color: #333;
+    --primary-color: #ff6b6b;
+    --secondary-color: #b8c0ff;
+    --card-bg: #ffffff;
+    --border-color: #ccc;
+}
+
+/* ------------------------------------------- */
+/* STYLES GÉNÉRAUX ET LAYOUT */
+/* ------------------------------------------- */
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 15px 0;
+    text-align: center;
+}
+
+header nav a {
+    color: var(--text-color);
+    margin: 0 15px;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: var(--primary-color);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.sidebar {
+    flex: 0 0 250px;
+    padding: 20px;
+    background-color: var(--card-bg);
+    border-right: 1px solid var(--border-color);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Section Histoire */
+#histoire-mission {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border-left: 5px solid var(--primary-color);
+}
+ 
+/* Conteneurs de Cartes (Services) */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    color: var(--primary-color);
+}
+ 
+/* --- Styles de la GALERIE d'IMAGES (Nouvelle section #projets) --- */
+ 
+/* Conteneur de la grille d'images (3 colonnes minimum) */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Style de chaque élément dans la galerie */
+.gallery-item {
+    background-color: var(--card-bg);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border: 1px solid var(--border-color);
+}
+
+/* L'image elle-même */
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+}
+ 
+/* Titre du projet */
+.gallery-item h2 {
+    font-size: 1.1em;
+    color: var(--primary-color);
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+ 
+
+.price {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Formulaires */
+.form-card {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Ajout des IDs pour le JS */
+#order-form input,
+#order-form select,
+#order-form textarea,
+.form-card input,
+.form-card select,
+.form-card textarea {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.form-card textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Boutons CTA */
+.cta-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #e65c5c;
+}
+
+.secondary-cta {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.secondary-cta:hover {
+    background-color: #3b3e5a;
+}
+
+/* Paiement */
+.payment {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px dashed var(--primary-color);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.payment h3 {
+    color: var(--primary-color);
+}
+
+.payment-buttons {
+    margin-top: 15px;
+}
+
+.paypal-button {
+    background-color: #0070BA;
+}
+
+.paypal-button:hover {
+    background-color: #004F8A;
+}
+
+
+/* Bouton de Thème */
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid var(--border-color);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+/* --- STYLES ADMIN --- */
+.d-none {
+    display: none !important;
+}
+
+#admin-panel {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #ff0000; /* Bordure rouge pour la visibilité */
+    margin-top: 30px;
+}
+
+#admin-panel h2 {
+    color: #ff0000;
+}
+
+#orders-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+#orders-list li {
+    border-bottom: 1px solid var(--border-color);
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+ 
+/* Style du bouton d'accès visible */
+#admin-access {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #ff0000 !important;
+    color: white !important;
+    border: 1px solid #ff6b6b !important;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 1000;
+    transition: background-color 0.3s;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+#admin-access:hover {
+    background-color: #cc0000 !important;
+}
+ 
+/* Style du bouton "Déconnexion" - Mis à jour par JS */
+#admin-access.logout {
+    background-color: var(--secondary-color) !important;
+    border-color: var(--text-color) !important;
+    box-shadow: none !important;
+    background-color: #5a5f78 !important;
+}
+ 
+#admin-access.logout:hover {
+    background-color: #3b3e5a !important;
+}
+/* --- FIN STYLES ADMIN --- */

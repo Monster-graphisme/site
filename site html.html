@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Graphisme - Services de Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body data-theme="dark">
+    <button id="theme-toggle" aria-label="Basculer le thème"><i class="fas fa-sun"></i> Thème Clair</button>
+    <button id="admin-access" class="cta-button" aria-label="Accès Administration"><i class="fas fa-user-shield"></i> Admin</button>
+
+    <header>
+        <div class="logo-container">
+            <h1>Monster Graphisme</h1>
+        </div>
+        <nav>
+            <a href="#projets"><i class="fas fa-image"></i> Projets</a>
+            <a href="#services"><i class="fas fa-palette"></i> Services</a>
+            <a href="#order"><i class="fas fa-shopping-cart"></i> Commander</a>
+            <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#histoire-mission">Mon Histoire</a></li>
+                    <li><a href="#projets">Mes Projets (Portfolio)</a></li>
+                    <li><a href="#services">Présentation des services</a></li>
+                    <li><a href="#order">Formulaire de commande</a></li>
+                    <li><a href="#contact">Informations de contact</a></li>
+                    <li><a href="#admin-dashboard" class="d-none" id="admin-link"><i class="fas fa-lock"></i> Admin Dashboard</a></li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-contact">
+                <h4>Me retrouver</h4>
+                <ul>
+                    <li><a href="mailto:gdelannoy67@gmail.com"><i class="fas fa-at"></i> Email : gdelannoy67@gmail.com</a></li>
+                    <li><a href="https://www.tiktok.com/@sod.monster" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a></li>
+                    <li><a href="https://www.instagram.com/monstergraphisme" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><span><i class="fab fa-discord"></i> Discord : deadshot_kill</span></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="content">
+            <section id="histoire-mission">
+                <h2><i class="fas fa-rocket"></i> Mon Histoire et Ma Mission</h2>
+                <p>Bienvenue ! Je suis un jeune adulte passionné et entièrement dévoué à l'art du graphisme. Ce qui a commencé il y a plusieurs années comme un simple hobby sur mon écran est rapidement devenu une véritable vocation. Je ne fais pas que concevoir des visuels : je donne vie aux idées, aux marques, et aux rêves.</p>
+                <p>Aujourd'hui, je souhaite professionnaliser cette passion pour vous accompagner dans tous vos projets. Que vous ayez besoin d'un logo mémorable, d'une affiche percutante ou d'un montage vidéo dynamique, mon objectif est de vous fournir des designs de haute qualité qui font mouche.</p>
+                <p>Ma promesse est simple : l'excellence, à des prix accessibles, et surtout, la rapidité. Je sais que dans le monde actuel, le temps est une ressource précieuse. C'est pourquoi je m'engage à vous offrir des délais de remise ultra-courts, sans jamais compromettre la qualité du rendu final.</p>
+                <p>Faites-moi confiance pour transformer vos idées en visuels impactants, rapidement et efficacement !</p>
+            </section>
+            
+            <hr>
+            
+            <section id="services">
+                <h2><i class="fas fa-palette"></i> Nos Services de Design</h2>
+                <p>Une petite sélection de nos tarifs :</p>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Logo personnalisé</h3>
+                        <p>Création d'un logo unique pour votre marque, association ou projet.</p>
+                        <div class="price">2 €</div>
+                        <a href="#order" class="cta-button">Commander</a>
+                    </div>
+                    <div class="card">
+                        <h3>Fond d’écran / Banner</h3>
+                        <p>Visuel optimisé pour vos profils sociaux (Twitch, YouTube) ou votre bureau.</p>
+                        <div class="price">3 €</div>
+                        <a href="#order" class="cta-button">Commander</a>
+                    </div>
+                    <div class="card">
+                        <h3>Flyer / Affiche</h3>
+                        <p>Design d'un support marketing percutant pour un événement ou une promotion.</p>
+                        <div class="price">5 €</div>
+                        <a href="#order" class="cta-button">Commander</a>
+                    </div>
+                    <div class="card">
+                        <h3>Montage vidéo</h3>
+                        <p>Montage court et dynamique (publicité, introduction, best-of, etc.).</p>
+                        <div class="price">7 €</div>
+                        <a href="#order" class="cta-button">Commander</a>
+                    </div>
+                    <div class="card">
+                        <h3>Pack complet</h3>
+                        <p>Logo, bannière et un visuel au choix (offre économique).</p>
+                        <div class="price">10 €</div>
+                        <a href="#order" class="cta-button">Commander</a>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+            
+            <section id="projets">
+                <h2><i class="fas fa-images"></i> Mon Portfolio Complet</h2>
+                <p class="section-intro">Découvrez tous mes travaux de graphisme et mon style unique sur une page dédiée. Cliquez ci-dessous pour explorer l'intégralité de mes réalisations.</p>
+                
+                <div style="text-align: center; margin-top: 30px;">
+                    <a href="portfolio.html" class="cta-button" style="padding: 15px 30px; font-size: 1.1em;">
+                        <i class="fas fa-arrow-right"></i> Voir TOUS mes projets (Portfolio)
+                    </a>
+                </div>
+            </section>
+            
+            <hr>
+            
+            <section id="order">
+                <h2><i class="fas fa-paper-plane"></i> Commander un service</h2>
+                <form class="form-card" id="order-form">
+                    <p class="form-description">Remplissez ce formulaire pour lancer votre commande. Je vous recontacterai rapidement.</p>
+                    <input type="text" placeholder="Votre nom" required id="order-name">
+                    <input type="email" placeholder="Votre email" required id="order-email">
+                    <select required id="order-service">
+                        <option value="">Choisissez un service</option>
+                        <option value="logo">Logo personnalisé — 2 €</option>
+                        <option value="fond">Fond d’écran — 3 €</option>
+                        <option value="flyer">Flyer / Affiche — 5 €</option>
+                        <option value="video">Montage vidéo — 7 €</option>
+                        <option value="pack">Pack complet — 10 €</option>
+                    </select>
+                    <textarea placeholder="Détails de votre demande (couleurs, style, références...)" required id="order-details"></textarea>
+                    <button type="submit" class="cta-button">Envoyer la commande</button>
+                </form>
+
+                <div class="payment">
+                    <h3>Paiement sécurisé <i class="fab fa-cc-paypal"></i></h3>
+                    <p>Le paiement se fait via PayPal, un système sécurisé. Finalisez votre commande et choisissez cette méthode pour régler.</p>
+                    <div class="payment-buttons">
+                        <a href="https://www.paypal.me/GabrielDelannoy748" target="_blank" class="pay-button paypal-button cta-button"><i class="fab fa-paypal"></i> Payer par PayPal</a>
+                    </div>
+                </div>
+            </section>
+            
+            <hr>
+            
+            <section id="contact">
+                <h2><i class="fas fa-comment-dots"></i> Me contacter</h2>
+                <div class="form-card">
+                    <p>
+                        Pour toute question, demande de devis ou pour passer une commande, veuillez me contacter directement via l'un des moyens ci-dessous.
+                        Je m'engage à vous répondre dans les plus brefs délais.
+                    </p>
+                    
+                    <p style="font-size: 1.1em; line-height: 1.8;">
+                        <i class="fas fa-at"></i> <span style="font-weight: bold;">Email :</span> <a href="mailto:gdelannoy67@gmail.com" style="font-weight: bold;">gdelannoy67@gmail.com</a><br>
+                        <i class="fab fa-discord"></i> <span style="font-weight: bold;">Discord :</span> <span style="font-weight: bold;">deadshot_kill</span><br>
+                        <i class="fab fa-tiktok"></i> <span style="font-weight: bold;">TikTok :</span> <a href="https://www.tiktok.com/@sod.monster" target="_blank">@sod.monster</a><br>
+                        <i class="fab fa-instagram"></i> <span style="font-weight: bold;">Instagram :</span> <a href="https://www.instagram.com/monstergraphisme" target="_blank">@monstergraphisme</a>
+                    </p>
+                </div>
+            </section>
+
+            <section id="admin-dashboard" class="d-none">
+                <hr>
+                <div id="admin-panel">
+                    <h2><i class="fas fa-tools"></i> Tableau de Bord Admin</h2>
+                    <p>Liste des commandes à traiter. Les commandes récentes apparaissent ici automatiquement. Cliquez sur **"Marquer comme Traité et supprimer"** pour valider et retirer la commande.</p>
+
+                    <ul id="orders-list">
+                    </ul>
+                    <p id="no-orders-msg" style="font-style: italic; color: var(--text-color);">Aucune commande en attente pour le moment.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://www.paypal.me/GabrielDelannoy748" target="_blank" class="footer-paypal-link"><i class="fab fa-paypal"></i> Payer via PayPal</a>
+        </div>
+        <p>© 2025 Monster Monster Graphisme — Tous droits réservés</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
